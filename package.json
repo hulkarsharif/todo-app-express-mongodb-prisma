@@ -16,11 +16,15 @@
     "description": "todo-api-app-express-prisma",
     "main": "index.js",
     "scripts": {
-        "start:dev": "nodemon index.js",
+        "start:dev": "nodemon src/index.js",
+        "start": "node  src/index.js",
         "prisma:g": "npx prisma generate --schema=./src/prisma/schema.prisma",
-        "db:p": "npx prisma db push --schema=./src/prisma/schema.prisma"
+        "db:p": "npx prisma db push --schema=./src/prisma/schema.prisma "
     },
     "author": "Khulkar Sharipova",
     "license": "ISC",
-    "type": "module"
+    "type": "module",
+    "engines": {
+        "node": "18.16.0"
+    }
 }
