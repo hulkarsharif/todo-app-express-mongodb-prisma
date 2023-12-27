@@ -18,8 +18,8 @@
     "scripts": {
         "start:dev": "nodemon index.js",
         "start": "node index.js",
-        "prisma:g": "./node_modules/.bin/prisma generate --schema=./src/prisma/schema.prisma",
-        "prisma:db-p": "./node_modules/.bin/prisma db push --schema=./src/prisma/schema.prisma"
+        "prisma:g": "npx prisma generate --schema=./src/prisma/schema.prisma",
+        "db:p": "npx prisma db push --schema=./src/prisma/schema.prisma"
     },
     "author": "Khulkar Sharipova",
     "license": "ISC",
